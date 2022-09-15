@@ -39,9 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
           top: 15,
           left: 5,
           child: IconButton(
-              onPressed: () {
-                print("testtt");
-              },
+              onPressed: () {},
               icon: const Icon(
                 Icons.arrow_back,
                 size: 30,
@@ -126,36 +124,40 @@ class _MyHomePageState extends State<MyHomePage> {
                             color: Colors.grey[600],
                           )),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        FlatButton(
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          FlatButton(
+                              onPressed: () {},
+                              child: Container(
+                                  padding: EdgeInsets.all(9),
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(2),
+                                      border: Border.all(
+                                          color: Colors.lightBlue[900])),
+                                  child: Text('MESSAGE',
+                                      style: TextStyle(
+                                        color: Colors.lightBlue[900],
+                                        fontWeight: FontWeight.bold,
+                                      )))),
+                          FlatButton(
                             onPressed: () {},
+                            color: Colors.lightBlue[900],
                             child: Container(
-                                padding: EdgeInsets.all(9),
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(2),
-                                    border: Border.all(color: Colors.blue)),
-                                child: Text('MESSAGE',
-                                    style: TextStyle(
-                                      color: Colors.blue,
-                                      fontWeight: FontWeight.bold,
-                                    )))),
-                        FlatButton(
-                          onPressed: () {},
-                          color: Colors.blue,
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(2),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(2),
+                              ),
+                              child: Text('CONNECT',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                  )),
                             ),
-                            child: Text('CONNECT',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                )),
-                          ),
-                        )
-                      ],
+                          )
+                        ],
+                      ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -203,16 +205,3 @@ class _MyHomePageState extends State<MyHomePage> {
         ]);
   }
 }
-
-// Widget buildProfileAvatar() {
-//   return
-// Positioned(
-//   top : coverHeight - avatarHeight/4,
-//   child: Container(
-//     height: 350,
-//     width: 350,
-//     color: Colors.blue,
-//   ),
-// );
-//   }
-// }
