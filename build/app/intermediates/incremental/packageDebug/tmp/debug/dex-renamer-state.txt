@@ -1,4 +1,4 @@
-#Thu Sep 15 23:23:59 ICT 2022
+#Fri Sep 16 00:48:02 ICT 2022
 base.0=/Users/macos/Documents/Dev/project/profile_page_ui/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
